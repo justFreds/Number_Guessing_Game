@@ -4,6 +4,8 @@ git branch -M main
 git push -u origin main
 */
 
+//****DYNAMIC LINKING TO MAYBE SAVE A BRANCH WITH CUSTOM MAX VALUE??*****
+
 //PROMPT: INTERACTIVE MENU
 //                          Press 1 To Play Game
 //                          Press 2 To Change Max Number
@@ -31,26 +33,3 @@ git push -u origin main
 //MAIN FUNCTION
 //
 //CALLS menuProcess()
-
-
-
-
-//RANDOMIZE THE MENU ITEM SELECTED
-
-//PASS THE TAX AND TIP INTO FUNCTION [RETURNS TOTAL]
-
-//DISPLAY: MENU ITEM CHOSEN
-//              COST
-//              TIP
-//              TAX
-//              TIP
-//              TOTAL
-
-
-
-
-/*
-    FUNCTION TO CALCULATE TOTAL [cost, tip, tax]
-    This is where we'll be calculating the cost
-    Total
-*/
