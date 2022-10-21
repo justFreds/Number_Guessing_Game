@@ -14,7 +14,7 @@ git push -u origin main
 //  exit()
 
 //constant array of const strings. The String values can not be updated and no new entries are permitted 
-const char * const menuEntries[] = {"Add Function", "Subtract Function", "Print Function", "Exit Function"}; 
+const char * const menuSelection[] = {"Play Default Game", "Play Custom Game", "Quit"}; 
 
 //MAIN FUNCTION
 //
