@@ -21,12 +21,12 @@ int getLine(char* buff, int buffLength) {
 //void menuDisplay()
 static void menuDisplay(int n, const char *const items[]) 
 { 
-    printf("\nWelcome User!\n"); 
+    printf("\nWelcome User!\n\n"); 
 
     for (int i = 1; i <= n; i++) 
         printf("\t%i) %s\n", i, items[i-1]); 
 
-    printf("Or Type Q/q To Quit At Any Time: "); 
+    printf("\nSelection: "); 
 } 
 //int menuChoice()
         //1: goes to the function with guessing game between (1-10)
@@ -41,9 +41,6 @@ static int menuChoice(int n, const char *const items[])
 
     while (getLine(line, MAXLEN) != -1) 
     {
-        if(sscanf(line, "%c", quit) == 'q' || sscanf(line, "%c", quit) == 'Q') {
-            goto skip;
-        }
         if(sscanf(line, "%i", &num) ==1 && 0 <= num && num <= n) 
             return num; 
         else 

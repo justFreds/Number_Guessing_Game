@@ -17,7 +17,7 @@ git push -u origin main
 //constant array of const strings
 const char * const menuSelection[] = {"Play Default Game", "Play Custom Game", "Quit"};
 //array of Ptrs, pointing to functions - This is a complex data type 
-void (*menuFuncPtrs[])(void) = {defaultGame};
+void (*menuFuncPtrs[])(void) = {defaultGame, customGame, exitGame};
 
 int main() {
         //prototype from guessPrompt.c
