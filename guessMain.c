@@ -6,22 +6,6 @@ git push -u origin main
 
 //****DYNAMIC LINKING TO MAYBE SAVE A BRANCH WITH CUSTOM MAX VALUE??*****
 
-//PROMPT: INTERACTIVE MENU
-//                          Press 1 To Play Game
-//                          Press 2 To Change Max Number
-//                          Press 3 To Quit
-
-//maybe like in promptMenu.c example from class?
-//  CREATE A PROMPT MENU LIKE FILE
-//  promptGame.c
-//int getLine()
-//void menuDisplay()
-//int menuChoice()
-        //1: goes to the function with guessing game between (1-10)
-        //2: goes to the function with guessing game between (1-UserDefinedMax)
-        //3: Exits
-//void menuProcess()
-
 
 //FUNCTIONS
 //CREATE gameFunctions.c
@@ -29,6 +13,8 @@ git push -u origin main
 //  customGame()
 //  exit()
 
+//constant array of const strings. The String values can not be updated and no new entries are permitted 
+const char * const menuEntries[] = {"Add Function", "Subtract Function", "Print Function", "Exit Function"}; 
 
 //MAIN FUNCTION
 //
