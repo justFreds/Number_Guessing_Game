@@ -4,6 +4,9 @@
 #include <string.h>
 
 #include "guessFunctions.h"
+//SAVE THE LAST MAX NUMBER INTO A FILE
+//CREATE A MODE CALLED LOAD GAME
+//WRITE THAT NUMBER INTO customMax
 
 //SENTINAL CHECK COMPARSION
 #define SENT_CHECK(y) strcmp(y, "q") == 0 || strcmp(y, "Q") == 1
