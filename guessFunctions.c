@@ -6,7 +6,7 @@
 #include "guessFunctions.h"
 //SAVE THE LAST MAX NUMBER INTO A FILE
 //CREATE A MODE CALLED LOAD GAME
-//WRITE THAT NUMBER INTO customMax
+//READ THAT NUMBER & WRITE INTO customMax
 
 //SENTINAL CHECK COMPARSION
 #define SENT_CHECK(y) strcmp(y, "q") == 0 || strcmp(y, "Q") == 1
@@ -84,6 +84,14 @@ void customGame(void) {
         fflush(stdin);
         scanf("%d", &customMax);
     }
+
+    //Write customMax into a file using w+
+    FILE *filePtr;
+    filePtr = fopen("saveFile.txt", "w+");      //OPENS in w+ mode
+    fprintf(filePtr, "%d", customMax);
+    fclose(filePtr);
+
+
     srand(time(NULL));
     secretNumber = rand()%customMax+1;     //RANDOM NUMBER FROM 1-customMax
 
@@ -126,6 +134,9 @@ void customGame(void) {
         printf("\n\nThe random number was: %d\nReturning to Main Menu now!\n", secretNumber);
         fflush(stdin);
     }
+}
+void loadGame(void) {
+
 }
 //  exit()
 void exitGame(void) {
