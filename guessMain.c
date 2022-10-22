@@ -15,9 +15,9 @@ git push -u origin main
 #include "guessFunctions.h"
 
 //constant array of const strings
-const char * const menuSelection[] = {"Play Default Game", "Play Custom Game", "Quit"};
+const char * const menuSelection[] = {"Play Default Game", "Play Custom Game", "Load Save File", "Quit"};
 //array of Ptrs, pointing to functions - This is a complex data type 
-void (*menuFuncPtrs[])(void) = {defaultGame, customGame, exitGame};
+void (*menuFuncPtrs[])(void) = {defaultGame, customGame, loadGame, exitGame};
 
 int main() {
         //prototype from guessPrompt.c

@@ -31,7 +31,7 @@ static void menuDisplay(int n, const char *const items[])
 //int menuChoice()
         //1: goes to the function with guessing game between (1-10)
         //2: goes to the function with guessing game between (1-UserDefinedMax)
-        //3: Exits
+        //4: Exits
 static int menuChoice(int n, const char *const items[]) 
 { 
     int num;

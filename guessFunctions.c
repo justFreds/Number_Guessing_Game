@@ -136,6 +136,17 @@ void customGame(void) {
     }
 }
 void loadGame(void) {
+    
+    printf("\n----Save File Loaded----\n");
+    
+    FILE *filePtr;
+    int customMax;
+
+    filePtr = fopen("saveFile.txt", "r");        //READ MODE
+    fscanf(filePtr, "%d\n", &customMax);    
+    fclose(filePtr);
+
+    printf("Custom Max: %d\n", customMax);
 
 }
 //  exit()
